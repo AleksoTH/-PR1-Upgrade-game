@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="LoginHeader" style="-unity-font: url(&apos;Library/unity default resources&apos;); -unity-text-align: upper-center; -unity-font-style: bold;">
+        <ui:Label text="Login" display-tooltip-when-elided="true" style="font-size: 200px; align-items: center; justify-content: flex-end;" />
+    </ui:VisualElement>
+    <ui:TextField picking-mode="Ignore" label="Username" value="filler text" text="filler text" name="username" style="max-width: none; max-height: none;" />
+    <ui:Button text="Login!" display-tooltip-when-elided="true" />
+</ui:UXML>

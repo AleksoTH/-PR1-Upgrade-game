@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-direction: row-reverse; align-items: stretch; justify-content: space-around;">
+        <ui:Label text="0" display-tooltip-when-elided="true" name="Score" style="white-space: nowrap; -unity-text-align: upper-left;" />
+        <ui:Label text="Score" display-tooltip-when-elided="true" name="ScoreLabel" style="white-space: nowrap; -unity-text-align: lower-center;" />
+    </ui:VisualElement>
+</ui:UXML>
