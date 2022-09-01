@@ -21,6 +21,7 @@ public class GameControl : MonoBehaviour
 
     private Label scorel;
     private ListView listView;
+    public static HttpAPI api;
 
     private void Update()
     {
@@ -72,6 +73,8 @@ public class GameControl : MonoBehaviour
         
         sidebar_root.Add(listView);
         StartCoroutine("MultiplyScore");
+        api = new HttpAPI();
+        api.performLogin("user", "pass");
     }
 
     private void selectMonster(IEnumerable<object> obj)
@@ -85,6 +88,7 @@ public class GameControl : MonoBehaviour
             listView.Refresh();
         }
     }
+
     private IEnumerator MultiplyScore()
     {
         while (true)
@@ -96,6 +100,7 @@ public class GameControl : MonoBehaviour
                 score = score + (mons.count * mons.multiplier);
                 scorel.text = score + "";
             }
+            api.updateScore(score);
         }
     }
     public void generateMonsters() {
